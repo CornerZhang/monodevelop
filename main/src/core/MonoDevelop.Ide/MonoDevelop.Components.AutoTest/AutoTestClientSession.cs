@@ -82,7 +82,7 @@ namespace MonoDevelop.Components.AutoTest
 
 			process = Process.Start (pi);
 
-			if (!waitEvent.WaitOne (15000)) {
+			if (!waitEvent.WaitOne (25000)) {
 				try {
 					process.Kill ();
 				} catch { }
